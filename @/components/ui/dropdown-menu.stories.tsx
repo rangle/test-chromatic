@@ -10,7 +10,13 @@ type DummyComponentProps = {
 
 const DummyComponent: FC<DummyComponentProps> = ({ variant }) => {
   return (
-    <div>
+    <div
+      style={{
+        border: "2px solid black",
+        borderRadius: "12px",
+        padding: "12px",
+      }}
+    >
       "this is a test: {variant ?? "0002.2 (first change one more time)"}"
     </div>
   );
