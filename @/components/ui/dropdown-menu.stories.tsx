@@ -10,7 +10,9 @@ type DummyComponentProps = {
 
 const DummyComponent: FC<DummyComponentProps> = ({ variant }) => {
   return (
-    <div>"this is a test: {variant ?? "0002.1 (first change continues)"}"</div>
+    <div>
+      "this is a test: {variant ?? "0002.2 (first change one more time)"}"
+    </div>
   );
 };
 
