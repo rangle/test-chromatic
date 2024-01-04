@@ -9,7 +9,9 @@ type DummyComponentProps = {
 };
 
 const DummyComponent: FC<DummyComponentProps> = ({ variant }) => {
-  return <div>"this is a test: {variant ?? "0002 (first change)"}"</div>;
+  return (
+    <div>"this is a test: {variant ?? "0002.1 (first change continues)"}"</div>
+  );
 };
 
 export const Primary: Meta<any> = {
